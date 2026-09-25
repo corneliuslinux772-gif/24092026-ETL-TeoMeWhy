@@ -1,62 +1,7 @@
-## Arquitetura DAG
+# DAG TeoMeWhy
 
-                    ┌─────────────┐
-                    │   START     │
-                    └──────┬──────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Download Kaggle │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Validate Files  │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Load PostgreSQL │
-                  │      RAW        │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Great           │
-                  │ Expectations   │
-                  └────────┬────────┘
-                           │
-                    ┌──────▼──────┐
-                    │    PASS?    │
-                    └───┬─────┬───┘
-                        │     │
-                       YES    NO
-                        │     │
-                        ▼     ▼
-                  ┌────────┐  FAIL
-                  │  dbt   │
-                  │ staging │
-                  └────┬───┘
-                       │
-                       ▼
-                  ┌─────────────┐
-                  │ dbt tests   │
-                  └──────┬──────┘
-                         │
-                         ▼
-                  ┌─────────────┐
-                  │ dbt         │
-                  │ analytics   │
-                  └──────┬──────┘
-                         │
-                         ▼
-                  ┌─────────────┐
-                  │ Final       │
-                  │ validation  │
-                  └──────┬──────┘
-                         │
-                         ▼
-                       END
+Started: 24-09-2026
+
 
 ## Arquitetura Geral
 
@@ -110,6 +55,89 @@
                  │      AIRFLOW        │
                  │   ORCHESTRATION     │
                  └─────────────────────┘
+
+
+## Arquitetura DAG
+
+                    ┌─────────────┐
+                    │   START     │
+                    └──────┬──────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Download Kaggle │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Validate Files  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Load PostgreSQL │
+                  │      RAW        │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │ Great           │
+                  │ Expectations   │
+                  └────────┬────────┘
+                           │
+                    ┌──────▼──────┐
+                    │    PASS?    │
+                    └───┬─────┬───┘
+                        │     │
+                       YES    NO
+                        │     │
+                        ▼     ▼
+                  ┌────────┐  QUARANTINE / FAIL
+                  │  dbt   │
+                  │ staging │
+                  └────┬───┘
+                       │
+                       ▼
+                  ┌─────────────┐
+                  │ dbt tests   │
+                  └──────┬──────┘
+                         │
+                         ▼
+                  ┌─────────────┐
+                  │ dbt         │
+                  │ analytics   │
+                  └──────┬──────┘
+                         │
+                         ▼
+                  ┌─────────────┐
+                  │ Final       │
+                  │ validation  │
+                  └──────┬──────┘
+                         │
+                         ▼
+                       END
+
+
+## Arquitetura GE
+
+             DATA CONTRACT
+                   │
+                   ▼
+        GREAT EXPECTATIONS
+                   │
+                   ▼
+          QUALITY ENGINE
+                   │
+       ┌───────────┼───────────┐
+       ▼           ▼           ▼
+     PASS       QUARANTINE    FAIL
+       │           │           │
+       ▼           ▼           ▼
+     DBT         QUARANTINE   AIRFLOW
+       │           │          FAILED
+       ▼           ▼
+ ANALYTICS      AUDIT
+
 
 ## Arquitetura Orquestrador
 

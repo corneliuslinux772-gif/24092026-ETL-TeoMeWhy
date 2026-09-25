@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "5ac16bbe-6aba-406f-8be4-eb570b696bd8",
+      "name": "cursos"
+    },
+    "batch_definition": {
+      "id": "0f4ffedc-7d16-4b31-9755-647fbd3bd417",
+      "name": "cursos_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "6efeb3d5-cc64-428f-83d4-60d1e0ca64ef",
+  "name": "cursos_validation",
+  "suite": {
+    "id": "c6ae92a7-4197-44da-b6b5-b7032bf583c0",
+    "name": "cursos_suite"
+  }
+}

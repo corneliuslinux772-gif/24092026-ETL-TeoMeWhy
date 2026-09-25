@@ -1,0 +1,55 @@
+{
+  "expectations": [
+    {
+      "id": "23bc7505-a0c2-402b-a7ba-293bce651521",
+      "kwargs": {
+        "column": "descSlugCurso"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "91640789-0c0e-4978-9012-344041c792fd",
+      "kwargs": {
+        "column": "descSlugCurso"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "7debe655-569e-4ec0-a29a-32f3ac90929e",
+      "kwargs": {
+        "column": "descCurso"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "1e854deb-5bd9-4b47-8a8c-370dec35898b",
+      "kwargs": {
+        "column": "descDescricao"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "dec5d7c1-0efa-4c20-92ab-81093c2cbfbd",
+      "kwargs": {
+        "column": "nrAno"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "c6ae92a7-4197-44da-b6b5-b7032bf583c0",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "cursos_suite",
+  "notes": null
+}
