@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-DATA_DIR = Path("🗄️_data/raw")
+DATA_DIR = Path("data/raw")
 
 def load_profile_dataset(file_path: Path) -> None:
     """
