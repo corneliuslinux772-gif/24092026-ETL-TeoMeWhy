@@ -1,0 +1,65 @@
+import great_expectations as gx
+
+from gx.config import (
+    HABILIDADES_USUARIOS_CHECKPOINT_NAME,
+    HABILIDADES_USUARIOS_VALIDATION_NAME,
+)
+
+
+context = gx.get_context(mode="file")
+
+
+# ============================================================
+# GET VALIDATION DEFINITION
+# ============================================================
+
+validation_definition = context.validation_definitions.get(
+    HABILIDADES_USUARIOS_VALIDATION_NAME
+)
+
+
+# ============================================================
+# CREATE CHECKPOINT
+# ============================================================
+
+try:
+    checkpoint = context.checkpoints.get(
+        HABILIDADES_USUARIOS_CHECKPOINT_NAME
+    )
+
+    print(
+        f"Checkpoint já existe: {HABILIDADES_USUARIOS_CHECKPOINT_NAME}"
+    )
+
+except Exception:
+
+    checkpoint = gx.Checkpoint(
+        name=HABILIDADES_USUARIOS_CHECKPOINT_NAME,
+        validation_definitions=[
+            validation_definition
+        ],
+    )
+
+    checkpoint = context.checkpoints.add(
+        checkpoint
+    )
+
+    print(
+        f"Checkpoint criado: {HABILIDADES_USUARIOS_CHECKPOINT_NAME}"
+    )
+
+
+# ============================================================
+# RUN CHECKPOINT
+# ============================================================
+
+print("\nExecutando Checkpoint...\n")
+
+result = checkpoint.run()
+
+
+# ============================================================
+# RESULT
+# ============================================================
+
+print(result.describe())

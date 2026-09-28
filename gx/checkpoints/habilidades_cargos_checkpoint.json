@@ -1,0 +1,12 @@
+{
+  "actions": [],
+  "id": "95c66002-9eca-4a5e-b6f8-8a75afc913c9",
+  "name": "habilidades_cargos_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "49bbf6c9-e4b7-4d78-b657-0a75645f5e31",
+      "name": "habilidades_cargos_validation"
+    }
+  ]
+}

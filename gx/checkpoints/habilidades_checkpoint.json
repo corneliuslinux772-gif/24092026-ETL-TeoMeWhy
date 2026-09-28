@@ -1,0 +1,12 @@
+{
+  "actions": [],
+  "id": "86614240-fdbd-453a-9285-e50dfac563a5",
+  "name": "habilidades_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "7d4f3d88-42dd-4e11-a000-31ca11565710",
+      "name": "habilidades_validation"
+    }
+  ]
+}

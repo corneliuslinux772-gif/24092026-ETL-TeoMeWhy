@@ -1,0 +1,12 @@
+{
+  "actions": [],
+  "id": "9110d5ef-9ff8-4cba-bab4-8de4d03d128d",
+  "name": "recompensas_usuarios_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "82a9d74b-b423-4d91-b2b3-0a37c5f8a0d2",
+      "name": "recompensas_usuarios_validation"
+    }
+  ]
+}
