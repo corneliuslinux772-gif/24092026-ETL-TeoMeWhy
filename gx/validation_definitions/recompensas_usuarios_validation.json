@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "e1d1519d-40cf-4fd6-a501-a310117fdb9e",
+      "name": "recompensas_usuarios"
+    },
+    "batch_definition": {
+      "id": "3870463b-0811-45b9-a38e-6b1c313276d2",
+      "name": "recompensas_usuarios_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "82a9d74b-b423-4d91-b2b3-0a37c5f8a0d2",
+  "name": "recompensas_usuarios_validation",
+  "suite": {
+    "id": "d93750c3-da20-4390-a8d7-91a037740894",
+    "name": "recompensas_usuarios_suite"
+  }
+}

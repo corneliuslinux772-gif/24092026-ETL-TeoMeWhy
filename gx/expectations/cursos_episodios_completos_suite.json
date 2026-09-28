@@ -1,0 +1,73 @@
+{
+  "expectations": [
+    {
+      "id": "2cda8751-5cd6-49ce-842f-d252183a6d34",
+      "kwargs": {
+        "column": "idCursoEpisodioCompleto"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "9d644560-d22a-44a2-ae62-9b4dff1086dd",
+      "kwargs": {
+        "column": "idCursoEpisodioCompleto"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "dd2ad528-9e3d-4cf0-a424-28f9d7c63791",
+      "kwargs": {
+        "column": "idUsuario"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "d9f6c187-5d51-4b57-86da-80c5788dc183",
+      "kwargs": {
+        "column": "descSlugCurso"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "fbf71bcd-5d26-442c-9ca8-ed3e93d08e8b",
+      "kwargs": {
+        "column": "descSlugCursoEpisodio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "48ff63b5-aedc-4d5d-9c4b-b7b1debce891",
+      "kwargs": {
+        "column": "dtCriacao"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6f3b9ef0-bf63-414a-b2ba-9f26079cb3cd",
+      "kwargs": {
+        "column": "nrAno"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "298a265e-a343-48c7-bf31-0ae24664751c",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "cursos_episodios_completos_suite",
+  "notes": null
+}

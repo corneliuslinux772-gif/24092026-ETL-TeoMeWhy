@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "f0460524-0790-4e54-a0d6-5e063c65dbe2",
+      "name": "habilidades"
+    },
+    "batch_definition": {
+      "id": "043d1555-11f7-4e7d-8ddd-3017259eeec9",
+      "name": "habilidades_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "7d4f3d88-42dd-4e11-a000-31ca11565710",
+  "name": "habilidades_validation",
+  "suite": {
+    "id": "65339e45-305b-4973-83ee-1963683124a2",
+    "name": "habilidades_suite"
+  }
+}

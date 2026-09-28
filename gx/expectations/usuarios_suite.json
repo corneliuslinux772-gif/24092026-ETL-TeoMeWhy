@@ -1,0 +1,28 @@
+{
+  "expectations": [
+    {
+      "id": "a5583020-b113-4581-ba88-ef90002f9d35",
+      "kwargs": {
+        "column": "idUsuario"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "8cb00e12-9550-4aaa-a1b0-d0b4963fa803",
+      "kwargs": {
+        "column": "idTMWCliente"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "378d748e-5d55-48f3-8055-a667b4ecc1c0",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "usuarios_suite",
+  "notes": null
+}

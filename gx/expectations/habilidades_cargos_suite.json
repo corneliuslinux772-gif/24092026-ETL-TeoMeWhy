@@ -1,0 +1,64 @@
+{
+  "expectations": [
+    {
+      "id": "9db241dc-9798-4e6f-a422-08af1a84a53c",
+      "kwargs": {
+        "column": "idHabilidadeCargo"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "b4187a69-5978-4054-a976-6be8fcf9f0b9",
+      "kwargs": {
+        "column": "idHabilidadeCargo"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "5b6357a0-5e9f-406d-87d7-035f0f5ee595",
+      "kwargs": {
+        "column": "descNomeCargo"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "48af246f-1d36-40c1-9e84-2f4af16e057c",
+      "kwargs": {
+        "column": "descNivelCargo"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a10193b3-14a2-466e-8864-0a4b14a8d7d6",
+      "kwargs": {
+        "column": "descNomeHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3fd43369-9cc9-4162-8155-18c76f167488",
+      "kwargs": {
+        "column": "descNivelHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "eb234f34-5a7d-42ca-bf42-7906729ac837",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "habilidades_cargos_suite",
+  "notes": null
+}

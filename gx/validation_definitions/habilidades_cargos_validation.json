@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "4bf93b1c-2dc9-421c-8ac0-cc0c1d8a9a0e",
+      "name": "habilidades_cargos"
+    },
+    "batch_definition": {
+      "id": "896dfeec-f077-4ced-8880-0be299b04d46",
+      "name": "habilidades_cargos_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "49bbf6c9-e4b7-4d78-b657-0a75645f5e31",
+  "name": "habilidades_cargos_validation",
+  "suite": {
+    "id": "eb234f34-5a7d-42ca-bf42-7906729ac837",
+    "name": "habilidades_cargos_suite"
+  }
+}

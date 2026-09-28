@@ -1,0 +1,46 @@
+{
+  "expectations": [
+    {
+      "id": "471a2418-f460-4f22-96c9-bc4c8e68193c",
+      "kwargs": {
+        "column": "idHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "1a578e65-4ed4-4e2f-9144-f4d7e2614938",
+      "kwargs": {
+        "column": "idHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "690192ff-5761-4c71-bc02-25b3f78aa822",
+      "kwargs": {
+        "column": "descNomeHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "262d3ec8-296e-44dc-92c4-567646ee47ef",
+      "kwargs": {
+        "column": "descDescricaoHabilidade"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "65339e45-305b-4973-83ee-1963683124a2",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "habilidades_suite",
+  "notes": null
+}

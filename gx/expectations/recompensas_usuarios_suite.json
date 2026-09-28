@@ -1,0 +1,37 @@
+{
+  "expectations": [
+    {
+      "id": "32fed1e7-cf42-4ea5-a22f-13b3bae30382",
+      "kwargs": {
+        "column": "idUsuario"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "1f1c4fff-5761-44b3-b4da-c79276efb6bd",
+      "kwargs": {
+        "column": "idRecompensa"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "4bca7981-a2e9-487a-bd59-682c8a0f4543",
+      "kwargs": {
+        "column": "dtRecompensa"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    }
+  ],
+  "id": "d93750c3-da20-4390-a8d7-91a037740894",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "recompensas_usuarios_suite",
+  "notes": null
+}

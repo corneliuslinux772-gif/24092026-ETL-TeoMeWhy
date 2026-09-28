@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "33c0e046-6cd7-478c-857d-67efe22fefb1",
+      "name": "usuarios"
+    },
+    "batch_definition": {
+      "id": "0f99618e-3b99-4da5-aa3b-6cc614a48eb3",
+      "name": "usuarios_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "d4a66ac4-d6db-4539-8675-52ba16b044f8",
+  "name": "usuarios_validation",
+  "suite": {
+    "id": "378d748e-5d55-48f3-8055-a667b4ecc1c0",
+    "name": "usuarios_suite"
+  }
+}
