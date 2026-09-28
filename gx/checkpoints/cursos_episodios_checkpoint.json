@@ -1,0 +1,12 @@
+{
+  "actions": [],
+  "id": "db8c0461-028a-4a67-96e6-fbe9189a7955",
+  "name": "cursos_episodios_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "b2a8fc2f-cf28-4cd3-8a61-4344cd5fa60c",
+      "name": "cursos_episodios_validation"
+    }
+  ]
+}

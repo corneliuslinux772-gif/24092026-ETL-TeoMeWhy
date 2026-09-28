@@ -95,6 +95,16 @@ fluent_datasources:
               regex: cursos.csv$
               param_names: []
         sep: ;
+      cursos_episodios:
+        type: csv
+        id: 0fbd3bd9-caa6-4558-863b-a3373ea49bf2
+        batch_definitions:
+          cursos_episodios_csv:
+            id: 7936b398-f1bf-42eb-a4f2-5205ace73e72
+            partitioner:
+              regex: cursos_episodios.csv$
+              param_names: []
+        sep: ;
     base_directory: data/raw
 analytics_enabled:
 data_context_id: 615674ad-41a7-4318-a735-91faf5e5cab0

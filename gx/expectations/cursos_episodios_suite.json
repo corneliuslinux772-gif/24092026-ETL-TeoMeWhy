@@ -1,0 +1,76 @@
+{
+  "expectations": [
+    {
+      "id": "17a2338d-e1a7-4bc2-8b4d-5b8825e4f975",
+      "kwargs": {
+        "column": "descSlugCurso"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "4c40a0dc-97fe-410e-929e-d4301b04b1b5",
+      "kwargs": {
+        "column": "nrEp"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "39e4f97d-28ac-42e5-8ac7-ee684e72ac6a",
+      "kwargs": {
+        "column": "descEpisodio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "77772f18-5664-4e84-8615-c28ee2f5163d",
+      "kwargs": {
+        "column": "descEpisodio"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "b87b2ed2-4b1b-43f9-91ca-ebbf165f2538",
+      "kwargs": {
+        "column": "descYoutubeID"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "c7543167-29f4-4f33-80f8-e5efbfec48ce",
+      "kwargs": {
+        "column": "descYoutubeID"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "f9fd3a08-1fd2-470f-87e6-282f80975bcc",
+      "kwargs": {
+        "column_list": [
+          "descSlugCurso",
+          "nrEp"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_compound_columns_to_be_unique"
+    }
+  ],
+  "id": "9a50d1b9-fce2-4abf-9bb8-564c2d79477b",
+  "meta": {
+    "great_expectations_version": "1.23.1"
+  },
+  "name": "cursos_episodios_suite",
+  "notes": null
+}

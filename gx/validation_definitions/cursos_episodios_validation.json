@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "0fbd3bd9-caa6-4558-863b-a3373ea49bf2",
+      "name": "cursos_episodios"
+    },
+    "batch_definition": {
+      "id": "7936b398-f1bf-42eb-a4f2-5205ace73e72",
+      "name": "cursos_episodios_csv"
+    },
+    "datasource": {
+      "id": "fbb73eab-2ab7-4f13-ab03-63eb824654aa",
+      "name": "education_platform_csv"
+    }
+  },
+  "id": "b2a8fc2f-cf28-4cd3-8a61-4344cd5fa60c",
+  "name": "cursos_episodios_validation",
+  "suite": {
+    "id": "9a50d1b9-fce2-4abf-9bb8-564c2d79477b",
+    "name": "cursos_episodios_suite"
+  }
+}

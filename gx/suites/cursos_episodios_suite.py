@@ -1,7 +1,7 @@
 import great_expectations as gx
-from great_expectations import expectations as gxe
-from gx.config import CURSOS_SUITE_NAME
 
+from great_expectations import expectations as gxe
+from gx.config import CURSOS_EPISODIOS_SUITE_NAME
 
 context = gx.get_context(mode="file")
 
@@ -11,17 +11,17 @@ context = gx.get_context(mode="file")
 # ---------------------------------------------------------
 
 try:
-    suite = context.suites.get(CURSOS_SUITE_NAME)
-    print(f"Expectation Suite já existe: {CURSOS_SUITE_NAME}")
+    suite = context.suites.get(CURSOS_EPISODIOS_SUITE_NAME)
+    print(f"Excepectation Suite já existe: {CURSOS_EPISODIOS_SUITE_NAME}")
 
 except Exception:
     suite = gx.ExpectationSuite(
-        name=CURSOS_SUITE_NAME
+        name=CURSOS_EPISODIOS_SUITE_NAME
     )
 
     suite = context.suites.add(suite)
 
-    print(f"Expectation Suite criada: {CURSOS_SUITE_NAME}")
+    print(f"Expectation Suite criada: {CURSOS_EPISODIOS_SUITE_NAME}")
 
 
 # ---------------------------------------------------------
@@ -38,38 +38,52 @@ def add_if_missing(suite, expectation):
     suite.add_expectation(expectation)
 
 
-
 # ---------------------------------------------------------
 # Expectations
 # ---------------------------------------------------------
 
+# Simulando a lista de slugs válidos obtidos do dataset 'cursos':
+# slugs_validos = ["python-basico", "machine-learning", "sql-avancado"] 
+
 expectations = [
+    # gxe.ExpectColumnValuesToBeInSet(
+    #    column="descSlugCurso",
+    #    value_set=slugs_validos
+    #),
+
     gxe.ExpectColumnValuesToNotBeNull(
         column="descSlugCurso",
+    ),
+
+    gxe.ExpectColumnValuesToNotBeNull(
+        column="nrEp",
+    ),
+
+    gxe.ExpectColumnValuesToNotBeNull(
+        column="descEpisodio",
     ),
 
     gxe.ExpectColumnValuesToBeUnique(
-        column="descSlugCurso",
+        column="descEpisodio",
     ),
 
     gxe.ExpectColumnValuesToNotBeNull(
-        column="descCurso",
+        column="descYoutubeID",
     ),
 
-    gxe.ExpectColumnValuesToNotBeNull(
-        column="descDescricao",
+    gxe.ExpectColumnValuesToBeUnique(
+        column="descYoutubeID",
     ),
 
-    gxe.ExpectColumnValuesToNotBeNull(
-        column="nrAno",
+    gxe.ExpectCompoundColumnsToBeUnique(
+        column_list=["descSlugCurso", "nrEp"],
     ),
 ]
 
-
 for expectation in expectations:
     add_if_missing(
-        suite,
-        expectation,
+        suite=suite,
+        expectation=expectation,
     )
 
 
