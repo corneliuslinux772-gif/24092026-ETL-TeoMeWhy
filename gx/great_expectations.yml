@@ -105,6 +105,66 @@ fluent_datasources:
               regex: cursos_episodios.csv$
               param_names: []
         sep: ;
+      cursos_episodios_completos:
+        type: csv
+        id: 881aa4c3-2054-47ec-b7b2-426502758a4a
+        batch_definitions:
+          cursos_episodios_completos_csv:
+            id: 23af6c33-d0a2-4b06-a7bf-8bef13b4d4e7
+            partitioner:
+              regex: cursos_episodios_completos.csv$
+              param_names: []
+        sep: ;
+      habilidades:
+        type: csv
+        id: f0460524-0790-4e54-a0d6-5e063c65dbe2
+        batch_definitions:
+          habilidades_csv:
+            id: 043d1555-11f7-4e7d-8ddd-3017259eeec9
+            partitioner:
+              regex: habilidades.csv$
+              param_names: []
+        sep: ;
+      habilidades_cargos:
+        type: csv
+        id: 4bf93b1c-2dc9-421c-8ac0-cc0c1d8a9a0e
+        batch_definitions:
+          habilidades_cargos_csv:
+            id: 896dfeec-f077-4ced-8880-0be299b04d46
+            partitioner:
+              regex: habilidades_cargos.csv$
+              param_names: []
+        sep: ;
+      habilidades_usuarios:
+        type: csv
+        id: bc02ca3c-5a28-4b2b-94b9-d2d473121771
+        batch_definitions:
+          habilidades_usuarios_csv:
+            id: c9b9b1e0-642e-4440-a027-3ab24305a43b
+            partitioner:
+              regex: habilidades_usuarios.csv$
+              param_names: []
+        sep: ;
+      recompensas_usuarios:
+        type: csv
+        id: e1d1519d-40cf-4fd6-a501-a310117fdb9e
+        batch_definitions:
+          recompensas_usuarios_csv:
+            id: 3870463b-0811-45b9-a38e-6b1c313276d2
+            partitioner:
+              regex: recompensas_usuarios.csv$
+              param_names: []
+        sep: ;
+      usuarios:
+        type: csv
+        id: 33c0e046-6cd7-478c-857d-67efe22fefb1
+        batch_definitions:
+          usuarios_csv:
+            id: 0f99618e-3b99-4da5-aa3b-6cc614a48eb3
+            partitioner:
+              regex: usuarios_tmw.csv$
+              param_names: []
+        sep: ;
     base_directory: data/raw
 analytics_enabled:
 data_context_id: 615674ad-41a7-4318-a735-91faf5e5cab0
