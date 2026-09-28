@@ -53,15 +53,6 @@
       "meta": {},
       "severity": "critical",
       "type": "expect_column_values_to_not_be_null"
-    },
-    {
-      "id": "6f3b9ef0-bf63-414a-b2ba-9f26079cb3cd",
-      "kwargs": {
-        "column": "nrAno"
-      },
-      "meta": {},
-      "severity": "critical",
-      "type": "expect_column_values_to_not_be_null"
     }
   ],
   "id": "298a265e-a343-48c7-bf31-0ae24664751c",

@@ -38,6 +38,18 @@ def add_if_missing(suite, expectation):
     suite.add_expectation(expectation)
 
 
+# ---------------------------------------------------------
+# Helper: Remove Expectation
+# ---------------------------------------------------------
+
+def removeExpectation(column_name):
+    for existing in suite.expectations.copy():
+
+        if (
+            type(existing) is gxe.ExpectColumnValuesToNotBeNull
+            and existing.column == column_name
+        ):
+            return suite.delete_expectation(existing)
 
 # ---------------------------------------------------------
 # Expectations
@@ -71,7 +83,7 @@ expectations = [
     ),
 
     gxe.ExpectColumnValuesToNotBeNull(
-        column="nrAno",
+        column="dtCriacao",
     ),
 ]
 
