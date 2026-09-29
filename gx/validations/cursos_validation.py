@@ -84,3 +84,19 @@ result = validation_definition.run()
 
 print("\nResultado da validação:")
 print(result)
+
+print("\n" + "=" * 80)
+print("INSPEÇÃO DO RESULTADO")
+print("=" * 80)
+
+print("\nTipo:")
+print(type(result))
+
+print("\nAtributos disponíveis:")
+print(dir(result))
+
+print("\nSuccess:")
+print(result.success)
+
+print("\nResultado interno:")
+print(result.to_json_dict())

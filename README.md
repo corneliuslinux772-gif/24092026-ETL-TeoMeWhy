@@ -225,3 +225,69 @@ education-data-platform/
     ├── architecture.md
     ├── data_dictionary.md
     └── data_quality.md
+
+
+## Modelo Conceitual da base de dados
+
+                         ┌─────────────────┐
+                         │     CURSOS      │
+                         │─────────────────│
+                         │ slug_curso      │
+                         │ curso            │
+                         │ descricao        │
+                         │ ano              │
+                         └────────┬────────┘
+                                  │
+                                  │ 1:N
+                                  ▼
+                         ┌─────────────────┐
+                         │    EPISÓDIOS    │
+                         │─────────────────│
+                         │ slug_curso      │
+                         │ nr_ep           │
+                         │ episodio        │
+                         │ youtube_id      │
+                         └────────┬────────┘
+                                  │
+                                  │
+                                  ▼
+┌───────────────┐       ┌──────────────────────┐
+│    USUÁRIO    │       │  EPISÓDIOS COMPLETOS │
+│───────────────│       │──────────────────────│
+│ id_usuario    │◄──────│ id_usuario           │
+└───────┬───────┘       │ slug_curso           │
+        │               │ slug_episodio        │
+        │               │ dt_criacao           │
+        │               └──────────────────────┘
+        │
+        │
+        ├──────────────────────────────┐
+        │                              │
+        ▼                              ▼
+┌───────────────────┐        ┌──────────────────┐
+│ HABILIDADES_USER  │        │ RECOMPENSAS_USER │
+│───────────────────│        │──────────────────│
+│ id_usuario        │        │ id_usuario       │
+│ habilidade        │        │ recompensa       │
+│ nivel             │        │ dt_recompensa    │
+│ dt_criacao        │        └──────────────────┘
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│    HABILIDADES    │
+│───────────────────│
+│ id_habilidade     │
+│ nome              │
+│ descricao         │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ HABILIDADES_CARGO │
+│───────────────────│
+│ cargo             │
+│ nivel_cargo       │
+│ habilidade        │
+│ nivel_habilidade  │
+└───────────────────┘

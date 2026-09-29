@@ -1,0 +1,3 @@
+descSlugCurso;descCurso;descDescricao;nrAno;quarantine_reason;constraint_name;source_file;severity
+carreira;Dicas e conversas sobre carreira;Não só de código, teoria e dados se constrói uma carreira. Esses materiais poderão te ajudar a melhorar suas habilidades sociais.;2025;Expectation 'cursos_descSlugCurso_unique' failed with 2 unexpected values.;cursos_descSlugCurso_unique;data/raw/cursos.csv;CRITICAL
+carreira;Dicas e conversas sobre carreira;Não só de código, teoria e dados se constrói uma carreira. Esses materiais poderão te ajudar a melhorar suas habilidades sociais.;2025;Expectation 'cursos_descSlugCurso_unique' failed with 2 unexpected values.;cursos_descSlugCurso_unique;data/raw/cursos.csv;CRITICAL
